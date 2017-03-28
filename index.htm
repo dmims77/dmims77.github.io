@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>Custom Bookkeepers</title>
+
+  <!-- <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+ -->
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-migrate-3.0.0.js"
+    integrity="sha256-lsVOB+3Yhm6He5MkTO3Bw/Xw4NXK7wYYTi1Y+M/2PrM="
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+    crossorigin="anonymous">
+  </script>
+
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' id='onelinelite-animation-css' media='all' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' media='all' rel='stylesheet' type='text/css'>
+  <link href='js/bxslider/jquery.bxslider.css' media='all' rel='stylesheet' type='text/css'>
+  <link href='css/style.css' media='all' rel='stylesheet' type='text/css'>
+  <link href='css/f-style.css' media='all' rel='stylesheet' type='text/css'>
+  <script src='js/classie.js' type='text/javascript'>
+  </script>
+
+  <style type='text/css'>
+         #services {
+             background-color: #fff;
+         }
+         .service-wrapper .svg-top-container {
+             fill: #fff;
+         }
+         #ribbon {
+             background: #1F1F1F;
+         }
+         .ribbon-wrapper .svg-top-container {
+             fill: #1F1F1F;
+         }
+         .ribbon-content h3 {
+             color: #fff;
+         }
+         .header-button.left-button {
+             color: #fff;
+             border-color: #fff;
+         }
+         .header-button.left-button:hover {
+             color: #fff;
+             border-color: #fff;
+         }
+         .team-wrapper #team {
+             background-color: #fff;
+         }
+         .team-wrapper .svg-top-container {
+             fill: #fff;
+         }
+         #latest-post {
+             background-color: #f7f7f7;
+         }
+         .post-wrapper .svg-top-container {
+             fill: #f7f7f7;
+         }
+         #woo-section {
+             background-color: #fff;
+         }
+         .woo-wrapper .svg-top-container {
+             fill: #fff;
+         }
+         .testimonials {
+             background-color: #1F1F1F;
+         }
+         .testimonials-wrapper .svg-top-container {
+             fill: #1F1F1F;
+         }
+         #contact {
+             background-color: #1F1F1F
+         }
+         .contact-wrapper .svg-top-container {
+             fill: #1F1F1F;
+         }
+         .footer-wrapper .svg-top-container {
+             fill: #fff;
+         }
+         .foot-copyright .svg-top-container {
+             fill: #1F1F1F;
+         }
+         .footer {
+             background-color: #fff;
+         }
+         .foot-copyright {
+             background-color: #1F1F1F;
+         }
+  </style>
+</head>
+<body class="home page page-id-11 page-template page-template-home-template page-template-home-template-php wp-custom-logo index" id="page-top">
+  <div class="overlayloader">
+    <div class="loader">
+      &nbsp;
+    </div>
+  </div>
+  <div class="header" id="header">
+    <div class="container clearfix">
+      <div id="logo">
+        <a class="custom-logo-link" href="https://custombookkeepers.com" itemprop="url" rel="home">
+          <img alt="Custom Bookkeepers logo" class="custom-logo" height="65" itemprop="logo" src="images/header-logo-white.png" width="225">
+        </a>
+      </div>
+      <div id="main-menu-wrapper">
+        <a class="toggle-mobile-menu" href="#" id="pull"></a>
+        <nav class="navigation clearfix mobile-menu-wrapper">
+          <ul class="menu" id="menu">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52" id="menu-item-52">
+              <a href="#services">Services</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54" id="menu-item-54">
+              <a href="#team">Team</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55" id="menu-item-55">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57" id="menu-item-57">
+              <a href="#our-location">Our Location</a>
+            </li> -->
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58" id="menu-item-58">
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div id="slider-div">
+    <div class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <!-- #1 Slider -->
+          <li data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" style="background:url('images/slide1.jpg');">
+            <div class="over-lay">
+              <div class="fs-caption wow fadeInDown" data-wow-delay="1s">
+                <div class="caption-container" data-106-top="opacity: 1" data-anchor-target="#slider-div h2" data-center="opacity: 1">
+                  <h2 class="title overtext"><a href="#services">Customized to fit your business's needs</a></h2>
+                  <div class="slider-button">
+                    <a class="theme-slider-button" href="#services">View Services</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- #2 Slider -->
+          <li data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" style="background:url('images/slide2.jpg');">
+            <div class="over-lay">
+              <div class="fs-caption wow fadeInDown" data-wow-delay="1s">
+                <div class="caption-container" data-106-top="opacity: 1" data-anchor-target="#slider-div h2" data-center="opacity: 1">
+                  <h2 class="title overtext"><a href="#">Combined we have over 150 years of bookkeeping experience.</a></h2>
+                  <div class="slider-button">
+                    <a class="theme-slider-button" href="#">Meet the Team</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- #3 Slider -->
+          <li data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" style="background:url('images/slide3.jpg');">
+            <div class="over-lay">
+              <div class="fs-caption wow fadeInDown" data-wow-delay="1s">
+                <div class="caption-container" data-106-top="opacity: 1" data-anchor-target="#slider-div h2" data-center="opacity: 1">
+                  <h2 class="title overtext"><a href="#contact">We're only a phone call away.</a></h2>
+                  <div class="slider-button">
+                    <a class="theme-slider-button" href="#contact">Call!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div><!-- =====SERVICE SECTION STRAT======= -->
+  <div class="service-wrapper">
+    <div class="svg-top-container">
+      <svg preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="0" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0"></path></svg>
+    </div>
+    <section class="svg_enable" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" id="services">
+      <div class="container">
+        <div class="page-services">
+          <h2 class="main-heading wow fadeInRight" data-wow-delay="0s">Services</h2>
+          <p class="sub-heading wow fadeInRight" data-wow-delay="0s">Local on-site or remote services.  Whatever is most convenient for you.</p>
+          <div class="service-block">
+            <ul class="service-grid wow fadeInLeft" data-wow-delay="0s">
+              <li class="service-list">
+                <div class="service-icon1">
+                  <span></span>
+                </div>
+                <div class="service-title">
+                  <span>IDEAS AND CONCEPTS</span>
+                </div>
+                <div class="service-content">
+                  <p>Some people know exactly what they need done.  Others need to meet for a brainstorming session.  We meet with you to get an idea of exactly what you need.</p>
+                </div>
+              </li>
+              <li class="service-list">
+                <div class="service-icon2">
+                  <span></span>
+                </div>
+                <div class="service-title">
+                  <span>FAST RELIABLE COMMUNICATION</span>
+                </div>
+                <div class="service-content">
+                  <p>Every had a vendor that just doesn't pick up their phone.  Won't return calls.  At Custom Bookkeepers one of our highest priorities is communication.  Keeping the client in the loop and everyone on the same page is vital in avoiding misunderstandings and mistakes.</p>
+                </div>
+              </li>
+              <li class="service-list">
+                <div class="service-icon3">
+                  <span></span>
+                </div>
+                <div class="service-title">
+                  <span>HIGHLY CUSTOMIZABLE</span>
+                </div>
+                <div class="service-content">
+                  <p>Get as little or as much work done as you want.  Maybe you just want payroll, or taxes.  Maybe you want fulltime expense tracking.  Solutions meet your financial needs.</p>
+                </div>
+              </li>
+              <li class="service-list">
+                <div class="service-icon4">
+                  <span></span>
+                </div>
+                <div class="service-title">
+                  <span>EASY</span>
+                </div>
+                <div class="service-content">
+                  <p>Have all your books done in a neat and orderly manner.  Quickly get a grip on expenses and income.  Reports showing exactly the financial health of your business, without all the difficult intricacies.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="clearfix"></div>
+  <!---SERVICE SECTION END- -->
+  
+  <!---RIBBON SECTION START- -->
+  <div class="ribbon-wrapper">
+    <section class="svg_enable" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" id="ribbon">
+      <video autoplay="autoplay" id="bgvid" loop="loop" poster=""><source src="video/typing-note-taking.mp4" type="video/mp4"></video>
+      <div class="container">
+        <div class="ribon-box">
+          <div class="ribbon-content wow fadeInLeft" data-wow-delay="0s">
+            <h3 class="main-heading">Get back to doing work you love.  Leave the numbers to us.</h3>
+          </div>
+          <div class="ribbon-button wow fadeInLeft" data-wow-delay="0s">
+            <a class="button header-button left-button" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- =====RIBBON SECTION END======= -->
+  <!-- TEAM SECTION START -->
+  <div class="team-wrapper">
+    <div class="svg-top-container">
+      <svg preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="0" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0"></path></svg>
+    </div>
+    <section class="svg_enable" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" id="team">
+      <div class="container">
+        <div class="page-team">
+          <h2 class="main-heading wow fadeInLeft" data-wow-delay="0s">Our Team</h2>
+          <p class="sub-heading wow fadeInLeft" data-wow-delay="0s">Over 120 years of experience here to serve you.</p>
+          <div class="team-block">
+            <ul class="team-grid wow fadeInRight" data-wow-delay="0s">
+              <li class="team-list">
+                <figure class="team-content">
+                  <img src="images/employee1.jpg">
+                  <figcaption>
+                    <a href="#">
+                    <h3>DANA MIMS</h3></a>
+                    <h4>Founder</h4>
+                    <div class="team-social-meta">
+                      <ul>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-google"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="team-list">
+                <figure class="team-content">
+                  <img src="images/employee2.jpg">
+                  <figcaption>
+                    <a href="">
+                    <h3>HELEN FITZ-RANDOLPH</h3></a>
+                    <h4>Co-Founder</h4>
+                    <div class="team-social-meta">
+                      <ul>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-google"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="team-list">
+                <figure class="team-content">
+                  <img src="images/employee3.jpg">
+                  <figcaption>
+                    <a href="">
+                    <h3>BARRY CHUCKLEFUCK</h3></a>
+                    <h4>Account Manager</h4>
+                    <div class="team-social-meta">
+                      <ul>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-google"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="team-list">
+                <figure class="team-content">
+                  <img src="images/employee4.jpg">
+                  <figcaption>
+                    <a href="">
+                    <h3>JOHNNY QUEMUEL</h3></a>
+                    <h4>Muscle and Artillery</h4>
+                    <div class="team-social-meta">
+                      <ul>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li class="team-social-social">
+                          <a href=""><i class="fa fa-google"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="clearfix"></div>
+  <!-- TEAM SECTION END -->
+
+  <!-- =====TESTIMONIALS SECTION START======= -->
+  <div class="testimonials-wrapper">
+    <div class="svg-top-container">
+      <svg preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="0" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0"></path></svg>
+    </div>
+    <section class="testimonials svg_enable" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;&gt; &lt;div class=" id="testimonials">
+      <div class="testimonials-box">
+        <div class="testimonials-div">
+          <ul class="bxslider fadeInUp" data-wow-delay=".5s">
+            <li>
+              <div class="image-test wow fadeInLeft" data-wow-delay="0s"><img src="images/bress.png"></div>
+              <div class="test-cont-heading">
+                <h2>Bress Pawn</h2>
+              </div>
+              <div class="test-cont wow fadeInRight" data-wow-delay="0s">
+                <a href="http://bresspawnshop.com/">
+                  <p>bresspawnshop.com</p>
+                </a>
+                <p>Dana was absolutely amazing.  We've been in business for over 70 years and after our previous bookkeeper passed away Dana was able to jump right in and take over.  Great job!  Can't recommend her enough.</p>
+              </div>
+            </li>
+            <li>
+              <div class="image-test wow fadeInLeft" data-wow-delay="0s"><img src="images/bust-a-move.jpg"></div>
+              <div class="test-cont-heading">
+                <h2>Bust-A-Move</h2>
+              </div>
+              <div class="test-cont wow fadeInRight" data-wow-delay="0s">
+                <a href="https://www.bustamoveva.com/">
+                  <p>bustamoveva.com</p>
+                </a>
+                <p>As the owner I had handled pretty much every aspect of my business as it grew.  But it just became too much.  Dana was very reassuring and got us back on track quickly.  It's allowed me to focus on growing the business, which we have.  Every year.  If you need moving services check us out!  We made a great decision on our bookkeeper and we make great decisions when moving.</p>
+              </div>
+            </li>
+            <li>
+              <div class="image-test wow fadeInLeft" data-wow-delay="0s"><img src="images/trump_square.jpg"></div>
+              <div class="test-cont-heading">
+                <h2>Donald Trump</h2>
+              </div>
+              <div class="test-cont wow fadeInRight" data-wow-delay="0s">
+                <a href="">
+                <p>www.whitehouse.gov</p></a>
+                <p>I'm the leader of the free world and I still use Dana for my bookkeeping.  Great girl.  I've seen a lot of girls, I'll tell you.  She is.  A lot of girls, and she is the best.  Better than anyone.  I should know, I do a lot of business.</p>
+                <p>Custom Bookkeepers is the best thing to happen to bookkeeping. Some people have an ability to do bookkeeping... It's an art you're basically born with. You either have it or you don't. If bookkeeping weren’t my own words, perhaps I’d be dating it. The concept of bookkeeping was created by and for the Chinese in order to make U.S. design jobs non-competitive. My review of Custom Bookkeepers is long and beautiful, as, it has been well documented, are various other parts of my website.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="clearfix"></div>
+  <!-- =====TESTIMONIALS SECTION END======= -->
+
+  <!-- <=====CONTACT SECTION START==== -->
+  <div class="contact-wrapper">
+    <div class="svg-top-container">
+      <svg preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="0" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0"></path></svg>
+    </div>
+    <section class="svg_enable" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" id="contact">
+      <div class="container">
+        <div class="page-contact">
+          <h2 class="cnt-main-heading">Contact Us</h2>
+          <!-- <p class="cnt-sub-heading">In posuere consequat purus ut venenatis. Maecenas mattis mattisIn</p> -->
+          <div class="contact-block">
+            <div class="addrs wow fadeInLeft" data-wow-delay="0s">
+              <div class="add-heading">
+                <h3 style="margin-top: 0;">ADDRESS</h3>
+              </div>
+              <p>
+              123 Main St.<br>
+              Portsmouth, VA 22222
+              </p>
+              
+              <div class="phone-heading">
+                <h3><i class="fa fa-phone" style="font-size: 40px; padding: 5px;"></i>PHONE</h3>
+              </div>
+              <p>
+              (757)214-4407                
+              </p>
+
+              <div class="email-heading">
+                <h3><i class="fa fa-envelope-o" style="font-size: 40px; padding: 5px;"></i>EMAIL</h3>
+              </div>
+              <p>
+              dmims77@gmail.com                
+              </p>
+
+            </div>
+            <div class="cnt-div wow fadeInRight" data-wow-delay="0s">
+              <div class="leadform-show-form medium lf-form-default">
+                <form action="https://formspree.io/dmims77@gmail.com@gmail.com" class="lead-form-front" enctype="multipart/form-data" id="form_1" method="post" name="custom_bookkeepers_contact_form">
+                  <h1>Contact Us</h1>
+                  <div class="name-type lf-field">
+                    <label>Name</label>
+                    <span>
+                      <input class="lf-form-name" id="1" name="Name" placeholder="Name" type="text" value="">
+                    </span>
+                  </div>
+                  <div class="text-type lf-field">
+                    <label>Email</label>
+                    <span>
+                      <input class="lf-form-text" id="2" name="Email" placeholder="Email" type="text" value="">
+                    </span>
+                  </div>
+                  <div class="text-type lf-field">
+                    <label>Contact No</label>
+                    <span>
+                      <input class="lf-form-text" id="3" name="Phone" placeholder="Contact number" type="text" value="">
+                    </span>
+                  </div>
+                  <div class="textarea-type lf-field">
+                    <label>Message</label>
+                    <span>
+                      <textarea class="lf-form-textarea" id="4" name="Message" placeholder="Message"></textarea>
+                    </span>
+                  </div>
+                  <div class="lf-form-panel">
+                    <div class="submit-type lf-field">
+                      <label>
+                        <input class="lf-form-submit" id="0" name="submit" type="submit" value="Submit ">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="leadform-show-loading front-loading leadform-show-message-form-1"></div>
+                  <div class="lf-loading">
+                    <img id="loading_image" src="images/load.gif" style="display: none;">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- <=====CONTACT SECTION END==== -->
+  <div class="clearfix"></div>
+  <div class="footer-wrapper">
+    <!-- Footer wrapper start -->
+  </div>
+  <div class="foot-copyright">
+    <div class="svg-top-container">
+      <svg preserveaspectratio="none" version="1.1" viewbox="0 0 100 100" width="0" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0"></path></svg>
+    </div><span class="text-footer">2017 © Custom Bookkeepers All rights reserved.</span>
+    <div class="social-ft">
+      <ul></ul>
+      <div></div>
+
+
+      <script src='js/wow-min.js' type='text/javascript'></script> 
+      <script src='js/flexslider/jquery.flexslider-min.js' type='text/javascript'></script> 
+      <script src='js/bxslider/jquery.bxslider.min.js' type='text/javascript'></script> 
+      <script src='js/skrollr.min.js' type='text/javascript'></script> 
+      <script src='js/imagesloaded.pkgd.min.js' type='text/javascript'></script> 
+      <script src='js/custom.js' type='text/javascript'></script> 
+
+      <a href="javascript:void(0);" id="scroll" style="display: none;" title="Scroll to Top "><span></span></a> 
+    </div>
+  </div>
+</body>
+</html>

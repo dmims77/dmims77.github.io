@@ -1,0 +1,241 @@
+
+/*
+*Captcha
+*/
+.leadform-show-form span .g-recaptcha div {
+    width: auto !important;
+    height: auto !important;
+}
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+/*
+*Form Design
+*/
+
+
+.leadform-show-form {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+}
+
+/***Global Form Style***/
+.sidebar .leadform-show-form h1, .footer .leadform-show-form h1{
+display:none;
+}
+.leadform-show-form input, .leadform-show-form select, .leadform-show-form textarea{
+width:auto;
+Max-width:100%;
+}
+.leadform-show-form label{
+margin: 1.625em 0 .4em;
+display:block;
+}
+.leadform-show-form label span {
+font-weight: 500;
+font-size:16px;
+line-height: 1.9;
+}
+.leadform-show-form input[type="radio"]:first-child, .leadform-show-form input[type="checkbox"]:first-child {
+margin:0px 5px 0px 0px;
+line-height: normal;
+}
+.leadform-show-form input[type="radio"], .leadform-show-form input[type="checkbox"]{
+margin:0px 5px 0px 10px;
+line-height: normal;
+}
+.leadform-show-form select,.leadform-show-form input[type="number" i],.leadform-show-form input[type="date"]{
+text-transform: none;
+min-width:100%;
+padding: .313em 0;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form h1{
+margin-top:20px;
+margin-bottom:20px;
+}
+.leadform-show-form input[type="file"] {
+    display: inherit;
+}
+.submit-type.lf-field {
+    display: inline-block;
+}
+.leadform-show-form ul{
+padding-left:5px;
+}
+.leadform-show-form ul li {
+    list-style-type: none;
+}
+.leadform-show-form textarea,.leadform-show-form input:not([type]), .leadform-show-form input[type="email" i], .leadform-show-form input[type="number" i], .leadform-show-form input[type="password" i], .leadform-show-form input[type="tel" i], .leadform-show-form input[type="url" i], .leadform-show-form input[type="text" i], .leadform-show-form input[type="number"] {
+    min-height: 38px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.leadform-show-form input[type="submit"] {
+padding: 10px 30px;
+    border-color: #000;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0C0C10;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.leadform-show-form.medium input[type="submit"] {
+    padding: 7px 20px;
+}
+.leadform-show-form.small input[type="submit"] {
+    padding: 5px 15px;
+}
+/***Large Form Style***/
+.leadform-show-form.large{
+display: block;
+margin: auto;
+max-width: 100%;
+}
+.leadform-show-form.large input:not([type]),.leadform-show-form.large input[type="email" i], .leadform-show-form.large input[type="number" i], .leadform-show-form.large input[type="password" i], .leadform-show-form.large input[type="tel" i], .leadform-show-form.large input[type="url" i], .leadform-show-form.large input[type="text" i], .leadform-show-form.large input[type="number"]  
+{
+width:100%;
+font-family: inherit;
+padding: .313em .5em;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form.large input[type="date"],.leadform-show-form.large input[type="time"],.leadform-show-form.large input[type="datetime-local"], .leadform-show-form.large input[type="month"] 
+{
+line-height: 15px; 
+font-family: inherit;
+padding: .313em 0;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form.large textarea {
+width:100%;
+min-height:150px;
+}
+
+/***Medium Form Style***/
+.leadform-show-form.medium{
+display: block;
+margin: auto;
+max-width: 60%;
+}
+.leadform-show-form.medium input:not([type]),.leadform-show-form.medium input[type="email" i],  .leadform-show-form.medium input[type="password" i], .leadform-show-form.medium input[type="tel" i],.leadform-show-form.medium input[type="url" i],.leadform-show-form.medium input[type="text" i], .leadform-show-form.medium input[type="number"] 
+{
+width:100%;
+font-family: inherit;
+padding: .313em 0;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form.medium input[type="date"],.leadform-show-form.medium input[type="time"],.leadform-show-form.medium input[type="datetime-local"], .leadform-show-form.medium input[type="month"] 
+{
+line-height: 15px; 
+font-family: inherit;
+padding: .313em 0;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form.medium textarea {
+width:100%;
+min-height:130px;
+
+}
+/***Small Form Style***/
+.leadform-show-form.small{
+display: block;
+margin: auto;
+max-width: 35%;
+}
+.leadform-show-form.small input:not([type]),.leadform-show-form.small input[type="email" i], .leadform-show-form.small input[type="number" i], .leadform-show-form.small input[type="password" i], .leadform-show-form.small input[type="tel" i],.leadform-show-form.small input[type="url" i],.leadform-show-form.small input[type="text" i], .leadform-show-form.small input[type="number"] 
+{
+width:100%;
+font-family: inherit;
+padding: .313em 0;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form.small input[type="date"],.leadform-show-form.small input[type="time"],.leadform-show-form.small input[type="datetime-local"], .leadform-show-form.small input[type="month"] 
+{
+line-height: 15px; 
+font-family: inherit;
+padding: .313em 0;
+letter-spacing: normal;
+text-indent: .25em;
+}
+.leadform-show-form.small textarea {
+width:100%;
+min-height:100px;
+}
+.lead-form-frontdiv #ui-datepicker-div {
+    max-width: 300px;
+}
+.ui-datepicker{
+    background: #F9F9F9;
+    padding: 5px;
+    border: 1px solid #F1F1F1;
+}
+.ui-datepicker .ui-datepicker-header{
+padding:5px 0;
+}
+.ui-datepicker-calendar tr th{
+    background: #00b9eb;
+    color: #fff;    
+	padding: 5px;
+}
+.ui-datepicker .ui-datepicker-title{
+display:inline-block;
+float:left;
+min-width:50%;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev:after{
+content:"-";
+margin:0 5px;
+}
+@media only screen and (max-width: 767px){
+	.lead-form-front h1{
+font-size:26px;
+}	
+}
+
+@media screen and (max-width: 550px){
+	.lead-form-front h1{
+font-size:22px;
+}	
+.leadform-show-form.small , .leadform-show-form.medium{
+    max-width: 100%;
+}
+}
